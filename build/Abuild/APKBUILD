@@ -3,7 +3,7 @@
 # Maintainer: Aaron Bassett <abassett@qnx.com>
 pkgname=file
 pkgver=5.46
-pkgrel=${pkgrel:-0}
+pkgrel=1
 pkgdesc="File type identification utility"
 url="https://www.darwinsys.com/file/"
 arch="all"
@@ -41,7 +41,6 @@ libmagic() {
 }
 
 
-options="$options ${DISABLE_CHECK:+!check}"
 sha512sums="
 a6cb7325c49fd4af159b7555bdd38149e48a5097207acbe5e36deb5b7493ad6ea94d703da6e0edece5bb32959581741f4213707e5cb0528cd46d75a97a5242dc  file-5.46.tar.gz
 467ae2a4348cb5730acea2049eff06ccc0037b8e510ee073442c93fdfb6a11ef82e2bf8389792abb84ded82b820ac530671f4f2016e0cb2f6bdf55392e2bce9b  file-5.46-pr-579-net147-fix-stack-overrun.patch
